@@ -1,4 +1,4 @@
-package main.java.org.example;
+package org.example;
 
 import javafx.application.Application;
 import javafx.application.Platform;
@@ -310,21 +310,21 @@ public class Client extends Application {
     }
 
     private void drawLine(int i, int j, Controller controller) {
-        Line line_a = new Line();
-        Line line_b = new Line();
-        controller.base_square.getChildren().add(line_a);
-        controller.base_square.getChildren().add(line_b);
-        line_a.setStartX(i * BOUND + OFFSET * 1.5);
-        line_a.setStartY(j * BOUND + OFFSET * 1.5);
-        line_a.setEndX((i + 1) * BOUND + OFFSET * 0.5);
-        line_a.setEndY((j + 1) * BOUND + OFFSET * 0.5);
-        line_a.setStroke(Color.BLUE);
+        Line lineA = new Line();
+        Line lineB = new Line();
+        controller.base_square.getChildren().add(lineA);
+        controller.base_square.getChildren().add(lineB);
+        lineA.setStartX(i * BOUND + OFFSET * 1.5);
+        lineA.setStartY(j * BOUND + OFFSET * 1.5);
+        lineA.setEndX((i + 1) * BOUND + OFFSET * 0.5);
+        lineA.setEndY((j + 1) * BOUND + OFFSET * 0.5);
+        lineA.setStroke(Color.BLUE);
 
-        line_b.setStartX((i + 1) * BOUND + OFFSET * 0.5);
-        line_b.setStartY(j * BOUND + OFFSET * 1.5);
-        line_b.setEndX(i * BOUND + OFFSET * 1.5);
-        line_b.setEndY((j + 1) * BOUND + OFFSET * 0.5);
-        line_b.setStroke(Color.BLUE);
+        lineB.setStartX((i + 1) * BOUND + OFFSET * 0.5);
+        lineB.setStartY(j * BOUND + OFFSET * 1.5);
+        lineB.setEndX(i * BOUND + OFFSET * 1.5);
+        lineB.setEndY((j + 1) * BOUND + OFFSET * 0.5);
+        lineB.setStroke(Color.BLUE);
         flag[i][j] = true;
     }
 }
