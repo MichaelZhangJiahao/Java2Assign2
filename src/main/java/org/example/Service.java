@@ -8,6 +8,7 @@ import java.util.Scanner;
 
 import static javafx.application.Platform.exit;
 
+
 public class Service implements Runnable {
     Socket socket1;
     Socket socket2;
